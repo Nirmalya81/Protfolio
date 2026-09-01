@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmalya Swain | VR Developer & Roblox Team Lead (Gauravgo Games)</title>
+    <meta name="description" content="Portfolio of Nirmalya Swain - VR Developer & Roblox Domain Team Lead at Gauravgo Games (2 Years Paid Internship). Showcasing VR Real Estate, VR Home Tour, VR MRI Simulation, VR Stadium, VR Temple, and Roblox games (Zombie Shootout & Sky Runner).">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HUD Background Canvas -->
+    <canvas id="hudCanvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-icon"><i class="fa-solid fa-vr-cardboard"></i></span>
+                <span class="logo-text">NIRMALYA<span class="highlight">.DEV</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#experience" class="nav-item"><i class="fa-solid fa-briefcase"></i> Experience</a>
+                <a href="#projects" class="nav-item"><i class="fa-solid fa-gamepad"></i> Projects</a>
+                <a href="#arcade" class="nav-item"><i class="fa-solid fa-rocket"></i> Play Demo</a>
+                <a href="#skills" class="nav-item"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#contact" class="nav-item nav-btn"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="status-dot green-pulse"></span>
+                        <span>Available for Game, VR & Roblox Lead Roles</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building Immersive <br>
+                        <span class="gradient-text">Virtual Reality</span> & <br>
+                        <span class="gradient-text-alt">Roblox Experiences</span>
+                    </h1>
+
+                    <p class="hero-bio">
+                        Hi, I'm <strong>Nirmalya Swain</strong>. I'm a <strong>VR Developer & Roblox Domain Team Lead</strong> with 
+                        <span class="text-glow">2 years of paid internship experience at Gauravgo Games</span>. 
+                        I led the Roblox engineering team creating hits like <em>Zombie Shootout</em> and specialized in <strong>Unity (C#)</strong> VR simulations (Real Estate, Home Tour, MRI Medical, Stadiums, Temples).
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-gamepad"></i> View My Projects
+                        </a>
+                        <a href="#arcade" class="btn btn-secondary">
+                            <i class="fa-solid fa-play"></i> Play Canvas Arcade
+                        </a>
+                        <a href="#experience" class="btn btn-outline">
+                            <i class="fa-solid fa-vr-cardboard"></i> Gauravgo Games Experience
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <h3 class="stat-num" data-target="2">2 Yrs</h3>
+                            <p class="stat-label">Paid VR & Roblox Intern</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-num" data-target="5">5 Main</h3>
+                            <p class="stat-label">Flagship VR Sims</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-num" data-target="90">90 FPS</h3>
+                            <p class="stat-label">Meta Quest Optimized</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-num" data-target="100">100K+</h3>
+                            <p class="stat-label">Plays & Interactions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Box -->
+                <div class="hero-visual">
+                    <div class="avatar-frame">
+                        <div class="glow-ring"></div>
+                        <img src="assets/avatar.jpg" alt="Nirmalya Swain Avatar" class="avatar-img">
+                        <div class="hud-tag top-right"><i class="fa-solid fa-user-shield"></i> Roblox Team Lead</div>
+                        <div class="hud-tag bottom-left"><i class="fa-brands fa-unity"></i> Unity C#</div>
+                        <div class="hud-tag bottom-right"><i class="fa-solid fa-vr-cardboard"></i> Meta Quest VR</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gauravgo Games Internship Feature Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-award"></i> Featured Work Experience</span>
+                    <h2 class="section-title">2 Years Paid Internship: VR Developer & Roblox Domain Team Lead @ Gauravgo Games</h2>
+                    <p class="section-subtitle">Leading Roblox game architecture and delivering high-performance Virtual Reality simulations in a paid internship.</p>
+                </div>
+
+                <div class="internship-card glass-panel">
+                    <div class="internship-grid">
+                        <div class="internship-media">
+                            <img src="assets/vr_showcase.jpg" alt="Gauravgo Games VR Development" class="showcase-img">
+                            <video class="internship-video" loop muted playsinline preload="metadata">
+                                <source src="video/realstate simulation.mp4" type="video/mp4">
+                            </video>
+                            <div class="media-overlay">
+                                <span class="badge-vr"><i class="fa-solid fa-crown"></i> Roblox Domain Team Lead (Paid Intern)</span>
+                            </div>
+                        </div>
+
+                        <div class="internship-info">
+                            <div class="company-badge">
+                                <i class="fa-solid fa-building"></i> <strong>Gauravgo Games</strong> | VR Developer & Roblox Domain Team Lead (2 Years Paid Internship)
+                            </div>
+                            
+                            <h3 class="role-title">Roblox Domain Team Lead & VR Simulation Engineer</h3>
+                            
+                            <p class="role-desc">
+                                Served as the <strong>Roblox Domain Team Lead</strong> at Gauravgo Games during a 2-year paid internship while engineering end-to-end Virtual Reality simulations in Unity. Managed team scripting workflows, Roblox game release pipelines, and server-side Luau module design for flagship Roblox titles like <em>Zombie Shootout</em>.
+                            </p>
+
+                            <ul class="achievement-list">
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Roblox Team Leadership:</strong> Directed Luau scripting architecture, multiplayer game loops, raycast gun frameworks, and DataStore save systems for Gauravgo's Roblox games.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>VR Hand Tracking & Haptics:</strong> Designed fluid XR hand interactions and physical object grabbing mechanics for Meta Quest VR headsets without controller buttons.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Target 90 FPS VR Performance:</strong> Optimized URP shaders, draw calls, draw distance, and occlusion culling for smooth Quest performance.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Multi-Platform Engineering:</strong> Integrated VR simulations with cloud databases and companion Android applications.</span>
+                                </li>
+                            </ul>
+
+                            <div class="tech-chips">
+                                <span class="chip"><i class="fa-solid fa-crown"></i> Team Leadership</span>
+                                <span class="chip"><i class="fa-solid fa-cube"></i> Roblox Luau OOP</span>
+                                <span class="chip"><i class="fa-brands fa-unity"></i> Unity 3D</span>
+                                <span class="chip"><i class="fa-solid fa-code"></i> C# Scripting</span>
+                                <span class="chip"><i class="fa-solid fa-vr-cardboard"></i> OpenXR & Meta Quest SDK</span>
+                                <span class="chip"><i class="fa-solid fa-network-wired"></i> Server-Client DataStores</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Nirmalya's VR & Game Projects</h2>
+                    <p class="section-subtitle">Explore featured VR simulations and Roblox experiences.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="vr"><i class="fa-solid fa-vr-cardboard"></i> VR Simulations</button>
+                    <button class="filter-btn" data-filter="unity"><i class="fa-brands fa-unity"></i> Unity (C#)</button>
+                    <button class="filter-btn" data-filter="roblox"><i class="fa-solid fa-cube"></i> Roblox (Luau)</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="projects-grid" id="projectsGrid">
+                    
+                    <!-- VR Project 1: Real Estate + Android App + DB -->
+                    <div class="project-card glass-panel" data-category="vr unity">
+                        <div class="card-thumb">
+                            <img src="assets/vr_real_estate.jpg" alt="VR Real Estate Simulation" class="card-img">
+                            <video class="project-video" loop muted playsinline preload="metadata">
+                                <source src="video/realstate simulation.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-hover-badge"><i class="fa-solid fa-circle-play"></i> HOVER TO PLAY VIDEO</div>
+                            <span class="card-badge badge-vr"><i class="fa-solid fa-vr-cardboard"></i> VR / Android / DB</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">VR Real Estate Sim (Android & DB Sync)</h3>
+                            <p class="project-summary">Interactive VR architectural walkthrough linked to a custom companion Android app. Clients customize property finishes in VR, instantly syncing selections to a cloud database.</p>
+                            <div class="card-tags">
+                                <span>Unity 3D</span>
+                                <span>Meta Quest</span>
+                                <span>Android App Integration</span>
+                                <span>Firebase / REST DB</span>
+                            </div>
+                            <button class="btn btn-card open-modal-btn" data-project="0">
+                                View Details & Video Spec <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- VR Project 2: VR Home Tour -->
+                    <div class="project-card glass-panel" data-category="vr unity">
+                        <div class="card-thumb">
+                            <img src="assets/vr_home_tour.jpg" alt="VR Home Tour Simulation" class="card-img">
+                            <video class="project-video" loop muted playsinline preload="metadata">
+                                <source src="video/room tour.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-hover-badge"><i class="fa-solid fa-circle-play"></i> HOVER TO PLAY VIDEO</div>
+                            <span class="card-badge badge-vr"><i class="fa-solid fa-vr-cardboard"></i> VR / Home Tour</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">VR Home Tour Simulation</h3>
+                            <p class="project-summary">Immersive 3D Virtual Reality residential home tour walkthrough allowing clients to explore interiors, test lighting options, and preview customizable furniture setups in VR.</p>
+                            <div class="card-tags">
+                                <span>Unity 3D</span>
+                                <span>Meta Quest</span>
+                                <span>Spatial UI Navigation</span>
+                                <span>PBR Interiors</span>
+                            </div>
+                            <button class="btn btn-card open-modal-btn" data-project="1">
+                                View Details & Video Spec <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- VR Project 3: VR MRI Simulation -->
+                    <div class="project-card glass-panel" data-category="vr unity">
+                        <div class="card-thumb">
+                            <img src="assets/vr_mri.jpg" alt="VR MRI Medical Simulation" class="card-img">
+                            <video class="project-video" loop muted playsinline preload="metadata">
+                                <source src="video/mri.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-hover-badge"><i class="fa-solid fa-circle-play"></i> HOVER TO PLAY VIDEO</div>
+                            <span class="card-badge badge-vr"><i class="fa-solid fa-vr-cardboard"></i> Medical VR</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">VR Medical MRI Scanner Simulation</h3>
+                            <p class="project-summary">Realistic VR medical training environment for operating MRI machinery. Features hand tracking for patient setup, magnetic safety protocols, and live 3D scan rendering.</p>
+                            <div class="card-tags">
+                                <span>Unity 3D</span>
+                                <span>Hand Tracking</span>
+                                <span>Medical VR</span>
+                                <span>Spatial UI</span>
+                            </div>
+                            <button class="btn btn-card open-modal-btn" data-project="2">
+                                View Details & Video Spec <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- VR Project 4: VR Stadium Simulation -->
+                    <div class="project-card glass-panel" data-category="vr unity">
+                        <div class="card-thumb">
+                            <img src="assets/vr_stadium.jpg" alt="VR Stadium Simulation" class="card-img">
+                            <video class="project-video" loop muted playsinline preload="metadata">
+                                <source src="assets/videos/vr_demo.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-hover-badge"><i class="fa-solid fa-circle-play"></i> HOVER TO PLAY VIDEO</div>
+                            <span class="card-badge badge-vr"><i class="fa-solid fa-vr-cardboard"></i> VR / Unity</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">VR Stadium & Arena Simulation</h3>
+                            <p class="project-summary">High-scale Virtual Reality stadium experience featuring 50,000+ instanced crowd audience models, dynamic stadium lighting, and 3D spatial roar acoustics.</p>
+                            <div class="card-tags">
+                                <span>Unity 3D</span>
+                                <span>Occlusion Culling</span>
+                                <span>Spatial Audio</span>
+                                <span>URP Shader</span>
+                            </div>
+                            <button class="btn btn-card open-modal-btn" data-project="3">
+                                View Details & Video Spec <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- VR Project 5: VR Temple Simulation -->
+                    <div class="project-card glass-panel" data-category="vr unity">
+                        <div class="card-thumb">
+                            <img src="assets/vr_temple.jpg" alt="VR Temple Simulation" class="card-img">
+                            <video class="project-video" loop muted playsinline preload="metadata">
+                                <source src="video/vr temple simulation.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-hover-badge"><i class="fa-solid fa-circle-play"></i> HOVER TO PLAY VIDEO</div>
+                            <span class="card-badge badge-vr"><i class="fa-solid fa-vr-cardboard"></i> VR Heritage</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">VR Temple Architectural Simulation</h3>
+                            <p class="project-summary">Atmospheric 3D cultural VR tour of detailed ancient temple architecture. Features realistic stone carving textures, volumetric light beams, and interactive audio guides.</p>
+                            <div class="card-tags">
+                                <span>Unity 3D</span>
+                                <span>Volumetric Lighting</span>
+                                <span>Spatial Chants</span>
+                                <span>Meta Quest</span>
+                            </div>
+                            <button class="btn btn-card open-modal-btn" data-project="4">
+                                View Details & Video Spec <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Roblox Project 1: Sky Runner -->
+                    <div class="project-card glass-panel" data-category="roblox">
+                        <div class="card-thumb">
+                            <img src="assets/roblox_sky_runner.jpg" alt="Sky Runner Roblox Game" class="card-img">
+                            <span class="card-badge badge-roblox"><i class="fa-solid fa-cube"></i> Roblox Luau</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Sky Runner: Roblox Parkour & Speed Obby</h3>
+                            <p class="project-summary">High-speed Roblox sky parkour and obstacle runner created in Roblox Studio using object-oriented Luau scripts, DataStore2, and global speed leaderboards.</p>
+                            <div class="card-tags">
+                                <span>Roblox Studio</span>
+                                <span>Luau OOP</span>
+                                <span>DataStore2</span>
+                                <span>Leaderboards</span>
+                            </div>
+                            <a href="https://www.roblox.com/share?code=018147b334442049810bec881c379dc3&type=ExperienceDetails&stamp=1787989362367" target="_blank" class="btn btn-primary btn-small" style="margin-top: 0.6rem; width: 100%;">
+                                <i class="fa-solid fa-play"></i> Play Sky Runner on Roblox
+                            </a>
+                            <button class="btn btn-card open-modal-btn" data-project="5">
+                                View Details & Tech Spec <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Roblox Project 2: Zombie Shootout -->
+                    <div class="project-card glass-panel" data-category="roblox">
+                        <div class="card-thumb">
+                            <img src="assets/roblox_zombie_shootout.jpg" alt="Zombie Shootout Roblox Game" class="card-img">
+                            <span class="card-badge badge-roblox"><i class="fa-solid fa-crown"></i> Gauravgo Team Lead Project</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Zombie Shootout: Roblox Wave FPS</h3>
+                            <p class="project-summary">Developed as Lead Developer & Roblox Domain Team Lead during a paid internship at Gauravgo Games. Features custom client-side gun raycasting, anti-exploit server validation, weapon skin shop, and zombie AI pathfinding.</p>
+                            <div class="card-tags">
+                                <span>Roblox Team Lead</span>
+                                <span>Paid Internship</span>
+                                <span>Gauravgo Games</span>
+                                <span>Zombie AI</span>
+                            </div>
+                            <a href="https://www.roblox.com/share?code=1ece9466655fd24c82eb50dbb5638adf&type=ExperienceDetails&stamp=1788251285860" target="_blank" class="btn btn-primary btn-small" style="margin-top: 0.6rem; width: 100%;">
+                                <i class="fa-solid fa-play"></i> Play Zombie Shootout on Roblox
+                            </a>
+                            <button class="btn btn-card open-modal-btn" data-project="6">
+                                View Details & Tech Spec <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Playable Arcade Section -->
+        <section class="arcade-section" id="arcade">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-crosshair"></i> Live Mini-Game</span>
+                    <h2 class="section-title">Interactive Arcade: Cyber Target Blaster</h2>
+                    <p class="section-subtitle">Play Nirmalya's web canvas mini-game built right inside this portfolio! Shoot glowing VR targets and dodge hazards.</p>
+                </div>
+
+                <div class="arcade-container glass-panel">
+                    <div class="arcade-header">
+                        <div class="arcade-title">
+                            <i class="fa-solid fa-gamepad"></i> <span>CYBER TARGET BLASTER v1.0</span>
+                        </div>
+                        <div class="arcade-scoreboard">
+                            <span><i class="fa-solid fa-trophy"></i> HIGH SCORE: <strong id="arcadeHighScore">0</strong></span>
+                            <span><i class="fa-solid fa-star"></i> SCORE: <strong id="arcadeScore">0</strong></span>
+                            <span><i class="fa-solid fa-shield-halved"></i> LIVES: <strong id="arcadeLives">3</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="canvas-wrapper">
+                        <canvas id="gameCanvas" width="800" height="420"></canvas>
+                        
+                        <div class="game-overlay" id="gameOverlay">
+                            <div class="overlay-card center">
+                                <h2><i class="fa-solid fa-vr-cardboard"></i> READY TO PLAY?</h2>
+                                <p>Click/Tap targets or move your ship with <strong>Mouse / Arrow Keys</strong> and <strong>Click / Spacebar</strong> to blast incoming cyber nodes!</p>
+                                <button class="btn btn-primary btn-large" id="startGameBtn">
+                                    <i class="fa-solid fa-play"></i> Start Mini-Game
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arcade-controls">
+                        <span><i class="fa-solid fa-keyboard"></i> Controls: <strong>Mouse Movement / Click</strong> or <strong>Arrow Keys + Spacebar</strong></span>
+                        <button class="btn btn-small btn-outline" id="resetGameBtn"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Technologies Matrix -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-microchip"></i> Technical Proficiency</span>
+                    <h2 class="section-title">Skills & Game Engine Tech Stack</h2>
+                    <p class="section-subtitle">Core expertise across VR headsets, game engines, programming languages, and team leadership.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Engine & VR Card -->
+                    <div class="skill-card glass-panel">
+                        <div class="skill-icon-header">
+                            <i class="fa-solid fa-vr-cardboard"></i>
+                            <h3>VR & Game Engines</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Unity 3D / 2D (C#)</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Meta Quest SDK / OpenXR</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Roblox Studio (Luau)</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Roblox Domain Team Lead</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code & Systems Card -->
+                    <div class="skill-card glass-panel">
+                        <div class="skill-icon-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Programming & Game Logic</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C# Scripting & OOP</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Luau (Roblox OOP & Gun Engines)</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>3D Vector Math & Physics</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>REST API / Firebase Database Sync</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Optimization & Tools -->
+                    <div class="skill-card glass-panel">
+                        <div class="skill-icon-header">
+                            <i class="fa-solid fa-sliders"></i>
+                            <h3>Graphics & Optimization</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>VR Performance Profiling (Quest 90 FPS)</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Unity Shader Graph & URP</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Spatial Audio & Medical/Architectural XR</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git / GitHub Version Control</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card glass-panel">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <span class="section-tag"><i class="fa-solid fa-headset"></i> Get In Touch</span>
+                            <h2 class="section-title">Let's Build Games & VR Experiences Together!</h2>
+                            <p class="contact-desc">
+                                Interested in collaborating on a Unity VR simulation (Real Estate, Home Tour, Healthcare, Architectural, Stadiums), Roblox game (Zombie Shootout, Sky Runner), or hiring me as a Game Developer / Team Lead? Drop a message below!
+                            </p>
+
+                            <div class="contact-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-user-gear"></i></div>
+                                    <div>
+                                        <h4>Name</h4>
+                                        <p>Nirmalya Swain</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <div>
+                                        <h4>Specialization & Role</h4>
+                                        <p>VR Developer & Roblox Domain Team Lead</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-building-user"></i></div>
+                                    <div>
+                                        <h4>Experience Highlight</h4>
+                                        <p>2 Years VR Developer & Roblox Team Lead @ Gauravgo Games (Paid Internship)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-links">
+                                <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.roblox.com/share?code=1ece9466655fd24c82eb50dbb5638adf&type=ExperienceDetails&stamp=1788251285860" target="_blank" class="social-btn" aria-label="Roblox Zombie Shootout Game"><i class="fa-solid fa-cube"></i></a>
+                                <a href="https://itch.io" target="_blank" class="social-btn" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+                                <a href="mailto:nirmalyaswain.dev@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-wrapper">
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" required placeholder="John Doe">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" required placeholder="john@example.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="category">Project Category</label>
+                                    <select id="category">
+                                        <option value="zombie-shootout">Roblox Zombie Shootout (Gauravgo Team Lead)</option>
+                                        <option value="sky-runner">Roblox Sky Runner</option>
+                                        <option value="real-estate">VR Real Estate & App Sync</option>
+                                        <option value="home-tour">VR Home Tour Simulation</option>
+                                        <option value="mri">VR Medical / MRI Simulation</option>
+                                        <option value="stadium">VR Stadium / Large Scale Sim</option>
+                                        <option value="temple">VR Temple / Architectural Heritage</option>
+                                        <option value="unity">Unity Game Development</option>
+                                        <option value="job">Job Offer / Lead Developer Role</option>
+                                        <option value="other">Other Inquiry</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" rows="4" required placeholder="Tell me about your project idea or role..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                                </button>
+                                <div id="formFeedback" class="form-feedback"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-backdrop" id="projectModal">
+        <div class="modal-box glass-panel">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic Modal Content populated via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Nirmalya Swain. Crafted with <i class="fa-solid fa-heart" style="color: #ff007f;"></i> for Game & VR Development.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
